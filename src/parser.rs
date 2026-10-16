@@ -32,7 +32,3 @@ pub(crate) fn parse_line(line: &str) -> LogRecord {
         message,
     }
 }
-
-pub(crate) fn parse_lines(content: &str) -> Vec<LogRecord> {
-    content.lines().map(parse_line).collect()
-}
