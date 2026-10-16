@@ -26,5 +26,12 @@ class Report:
 
     def print(self) -> None: ...
 
+    def filter(
+        self,
+        level: LogLevel | None = ...,
+        logger: str | None = ...,
+        text: str | None = ...,
+    ) -> Report: ...
+
 
 def analyze(path: str | Path) -> Report: ...
